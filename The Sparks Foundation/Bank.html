@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bank</title>
+    <link rel="icon" type="image/x-icon" href="./Image/BankLogo.jpeg">
+    <link rel="stylesheet" href="Bank.css">
+</head>
+<body>
+    <div id="heading">
+          <div id="Left-side">Money Transfer</div>
+
+          <div id="Right-side">
+            <div class="tab">
+                <button class="tablinks" onclick="openCity
+                (event, 'Money Transfer')"
+                 style="margin-left: 2vw;" id="defaultOpen">
+                    Money Transfer</button>
+                <button class="tablinks" onclick="openCity
+                (event, 'Customer Detail')"
+                style="margin-left: 3vw;">
+                    Customer Detail</button>
+                <button class="tablinks" onclick="openCity
+                (event, 'Transaction History')"
+                style="margin-left: 2.5vw;">
+                    Transaction History</button>
+
+                <a href="Home.html">
+                    <button class="tablinks" style="margin-left: 2vw;">
+                        Home</button>
+                </a>
+              </div>
+              
+          </div>
+    </div>
+    <hr>
+
+    <!-------------- Tab content --------------------------->
+    <div id="Money Transfer" class="tabcontent">
+
+        <!--------------------Money Transfer Start--------------------->
+        <div class="Flex-Container-MT">
+            <div>
+                <table>
+                    <tr>
+                        <td><label for="Name">Senders Name</label></td>
+                        <td><input type="text" id="SN"></td>
+                    </tr>
+    
+                    <tr>
+                        <td><label for="Email">Senders Email</label></td>
+                        <td><input type="text" id="SE"></td>
+                    </tr>
+    
+                    <tr>
+                        <td><label for="Name">Receivers Name</label></td>
+                        <td><input type="text" id="RN"></td>
+                    </tr>
+    
+                    <tr>
+                        <td><label for="Email">Receivers Email</label></td>
+                        <td><input type="text" id="RE"></td>
+                    </tr>
+    
+                    <tr>
+                        <td><label for="Amount">Amount</label></td>
+                        <td><input type="text" 
+                            style="margin-right:8vw" id="Amount"></td>
+                    </tr>
+    
+                    <tr >
+                        <td colspan="2" rowspan="2">
+                            <button onclick="sendMoney()" id="Unique">Submit</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+    
+            <div>
+                <img src="./Image/MT Background.jpg" alt="">
+            </div>
+
+            <!--------------------Money Transfer End--------------------->
+        </div>
+         
+    </div>
+  
+    <div id="Customer Detail" class="tabcontent">
+    
+        <!---------------Customer Detail Start--------------------------->
+
+        <div class="Ninth">
+            <table>
+                <tr>
+                    <th>Serial Number</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Balance</th>
+                </tr>
+    
+                <tr>
+                    <td>1</td>
+                    <td>Suraj</td>
+                    <td>suraj@gmail.com</td>
+                    <td id="suraj@gmail.com">5000</td>
+                </tr>
+    
+                <tr>
+                    <td>2</td>
+                    <td>Prafful</td>
+                    <td>prafful@gmail.com</td>
+                    <td id="prafful@gmail.com">1000</td>
+                </tr>
+    
+                <tr>
+                    <td>3</td>
+                    <td>Aditya</td>
+                    <td>aditya@gmail.com</td>
+                    <td id="aditya@gmail.com">2000</td>
+                </tr>
+    
+                <tr>
+                    <td>4</td>
+                    <td>Pratik</td>
+                    <td>pratik@gmail.com</td>
+                    <td id="pratik@gmail.com">5000</td>
+                </tr>
+    
+                <tr>
+                    <td>5</td>
+                    <td>Sanjeev</td>
+                    <td>sanjeev@gmail.com</td>
+                    <td id="sanjeev@gmail.com">8000</td>
+                </tr>
+    
+                <tr>
+                    <td>6</td>
+                    <td>Anurag</td>
+                    <td>anurag@gmail.com</td>
+                    <td id="anurag@gmail.com">6000</td>
+                </tr>
+    
+                <tr>
+                    <td>7</td>
+                    <td>Ayush</td>
+                    <td>ayush@gmail.com</td>
+                    <td id="ayush@gmail.com">4000</td>
+                </tr>
+    
+                <tr>
+                    <td>8</td>
+                    <td>Gulshan</td>
+                    <td>gulshan@gmail.com</td>
+                    <td id="gulshan@gmail.com">8000</td>
+                </tr>
+    
+                <tr>
+                    <td>9</td>
+                    <td>Pankaj</td>
+                    <td>pankaj@gmail.com</td>
+                    <td id="pankaj@gmail.com">4000</td>
+                </tr>
+    
+                <tr>
+                    <td>10</td>
+                    <td>Piyush</td>
+                    <td>piyush@gmail.com</td>
+                    <td id="piyush@gmail.com">3000</td>
+                </tr>
+    
+                <tr>
+                    <td rowspan="4" colspan="4">END</td>
+                </tr>
+            </table>
+        </div>
+        <!---------------Customer Detail End----------------------------->
+    </div>
+  
+    <div id="Transaction History" class="tabcontent">
+   
+        <div id="Tenth">
+            
+        </div>
+        <img src="./Image/TransactionHistory.jpg" alt="">
+  </div>
+  
+
+   <script src="Script.js"></script>
+
+<!------------Javascript Code For Managing Multiple Pages----------------->
+  <script>
+
+  // Get the element with id="defaultOpen" and click on it
+  document.getElementById("defaultOpen").click();
+  function openCity(evt, cityName) 
+  {
+
+        document.getElementById("Left-side").innerHTML=cityName;
+        // Declare all variables
+        var i, tabcontent, tablinks;
+
+        // Get all elements with class="tabcontent" and hide them
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) 
+        {
+            tabcontent[i].style.display = "none";
+        }
+
+        // Get all elements with class="tablinks" and remove the class "active"
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) 
+        {
+            tablinks[i].className = tablinks[i].className.replace
+            (" active", "");
+        }
+
+        // Show the current tab, and add an "active" class to the button that opened the tab
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+
+        if(cityName=="London")
+        {
+            docment.getElementById("Left-side").innerHTML="Money Transfer";
+        }
+        else if(cityName=="Paris")
+        {
+            docment.getElementById("Left-side").innerHTML="Customer Detail";
+        }
+        else if(cityName=="Tokyo")
+        {
+            docment.getElementById("Left-side").innerHTML="Transaction History";
+        }
+    }
+  </script>
+
+</body>
+</html>

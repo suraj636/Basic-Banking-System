@@ -1,0 +1,190 @@
+
+/*                            START                                      */ 
+
+#heading
+{
+    background-color: transparent;height: 8vw;
+}
+
+#Left-side
+{
+    float: left;background-color:transparent;height: 4vw;
+    color: darkcyan;
+    width: 30vw;font-size: 3vw;margin-top: 2vw;margin-left: 1vw;
+}
+#Right-side
+{
+    float: right;background-color: transparent;
+    height: 8vw;width:60vw;
+}
+hr
+{
+    height: 0.3vw;background-color: cadetblue;border-radius: 50%;
+}
+.tablinks
+{
+    font-size: 1.5vw;margin-top: 3vw;border: none;
+   font-weight: bold;color: cadetblue;background-color: white;
+}
+.tablinks:hover
+{
+    background-color: cadetblue;color: white;
+    transition-duration: 0.3s;
+    border-radius: 3%;
+}
+
+/*-----------------------Money Transfer Start----------------------------*/
+
+
+.Flex-Container-MT
+{
+  display: flex;
+  background-color: transparent;
+  height: 35vw;
+  width: 60vw;
+  margin-top: 2vw;
+}
+.Flex-Container-MT div
+{
+  width: 80vw;
+  background-color: transparent;
+  border: 1px solid transparent;
+}
+
+.Flex-Container-MT div img
+{
+  width: 50vw;height: 35vw;
+  padding: 0;
+}
+
+.Flex-Container-MT input
+{
+  font-size: 2vw;border: none;margin-left: 1vw;
+  outline: 0.2vw solid cadetblue;border-radius: 1%;
+}
+
+.Flex-Container-MT input:hover
+{
+  outline: 0.4vw solid cadetblue;
+  box-shadow: 
+  rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+   rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  
+}
+
+.Flex-Container-MT label
+{
+  font-size: 2vw;border: none;font-weight: bolder;
+  color: darkcyan;
+
+}
+.Flex-Container-MT table
+{
+  border: 1px solid transparent;
+  margin: 1.8vw;
+  margin-top: 1.3vw;
+}
+
+.Flex-Container-MT table tr td button
+{
+  font-size: 2vw;text-align: center;margin: auto;height: 3vw;
+  margin-left: 15vw;width: 15vw;border-radius: 5%;
+  border: 0.2vw solid darkcyan;
+  margin-top: 1.7vw;color:darkcyan;
+  background-color: white;
+  
+}
+
+.Flex-Container-MT td
+{
+  border: 1px solid transparent;
+  padding: 0.7vw;
+}
+
+hr
+{
+  height: 0.3vw;background-color: cadetblue;border-radius: 50%;
+}
+
+
+button:hover
+{
+  
+  transition-duration: 0.8s;
+  box-shadow: rgba(0, 0, 0, 0.16) 
+  0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  
+}
+#Unique:hover
+{
+  transition-duration: 0.4s;
+  background-color: darkcyan;color: white;
+  box-shadow: rgba(0, 0, 0, 0.16) 
+  0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+/*-----------------------Money Transfer End------------------------------*/
+
+/*=======================================================================*/
+
+/*----------------------Customer Detail Start-----------------------------*/
+.Ninth
+{
+  background-color: transparent;height: 75vw;
+}
+
+.Ninth table
+{
+  border: 1px solid transparent;
+  width:90vw;margin-left: 4.3vw;margin-top: 3vw;border-radius: 2%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.Ninth th
+{
+  background-color: white;color:darkcyan;border-color:cadetblue;
+}
+.Ninth table,th
+{
+  border: 0.4vw solid cadetblue;text-align: center;
+  height: 5vw;font-size: 2vw;border-collapse: collapse;
+}
+.Ninth td
+{
+    border: 0.4vw solid cadetblue;height: 5vw;font-size: 2vw;
+}
+.Ninth td:hover
+{
+  background-color: cadetblue;color: white;
+  transition-duration: 0.4s;text-shadow: 5px 5px 5px black;
+}
+
+/*----------------------Customer Detail End------------------------------*/
+
+/*=======================================================================*/
+
+/*---------------------Transaction History Start-------------------------*/
+#Tenth
+{
+  height: 33vw;background-color: transparent;width: 45vw;
+  font-size: 2vw; color: Black;border: 1px solid transparent;
+  padding-left: 2vw;float: left;margin-top: 4vw;
+}
+#Tenth li
+{
+  padding-top: 2vw;color: cadetblue;
+}
+
+.tabcontent img
+{
+  float: right;
+  height: 37vw;width:50vw;
+  border: 1px solid transparent;
+}
+/*---------------------Transaction History End---------------------------*/
+#success-alert
+{
+  background-color: white;
+  color: green;
+}
+
+
+/*                               END                               */
